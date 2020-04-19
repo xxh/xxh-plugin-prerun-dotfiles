@@ -30,7 +30,7 @@ if [[ ! -f $done_file ]]; then
       mkdir -p $target_item
     fi
   done
-  cd $XXH_HOME
   mkdir -p `dirname $done_file`
   echo 'done' > $done_file
 fi
+cd $XXH_HOME
