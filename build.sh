@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-CDIR="$(cd "$(dirname "$0")" && pwd)"
+CDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 build_dir=$CDIR/build
 
 while getopts A:K:q option
@@ -21,4 +21,4 @@ do
     cp $CDIR/$f $build_dir/
 done
 
-cp -r home $build_dir/
+cp -r $CDIR/home $build_dir/
