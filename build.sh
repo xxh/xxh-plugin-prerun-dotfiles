@@ -13,12 +13,12 @@ do
   esac
 done
 
-rm -rf $build_dir
-mkdir -p $build_dir
+cd $CDIR
+rm -rf $build_dir && mkdir -p $build_dir
 
-for f in *prerun.sh
+for f in *prerun.sh home
 do
-    cp $CDIR/$f $build_dir/
+    cp -r $CDIR/$f $build_dir/
 done
 
-cp -r $CDIR/home $build_dir/
+PYTHONUSERBASE=$build_dir/home/.local pip install --user -I -r pip-requirements.txt

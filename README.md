@@ -17,3 +17,7 @@ Connect:
 ```
 xxh yourhost +if
 ```
+
+## Preinstall Python packages
+Add python packages to `pip-requirements.txt` and they will be in `$XXH_HOME/.local`. 
+This is compatible with [xxh-shell-xonsh](https://github.com/xxh/xxh-shell-xonsh) and [xxh-plugin-prerun-python](https://github.com/xxh/xxh-plugin-prerun-python). 
