@@ -9,7 +9,7 @@ The plugin copy files only once during first start. It copies the files from plu
 as addition and without replacing. It means if you hadn't the directory it will appear. If you have directory with files 
 but without the file from plugin home it just appears.
 
-Be carefully if you are using [non hermetic environment](https://github.com/xxh/xxh/wiki#how-to-set-homeuser-as-home-on-host) by using `+hhh '~' +hhx '~'` arguments.  
+Be carefully if you are using [non-hermetic environment](https://github.com/xxh/xxh/wiki#how-to-set-homeuser-as-home-on-host) by using `+hhh '~' +hhx '~'` arguments.  
 
 ## Install
 From xxh repo:
