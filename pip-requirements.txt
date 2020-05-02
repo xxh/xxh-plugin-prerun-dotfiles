@@ -1,3 +1,8 @@
 #asciinema
 #lolcat
 #pandas
+
+#Useful xontribs for xonsh:
+#git+https://github.com/anki-code/xontrib-pipeliner
+#git+https://github.com/anki-code/xontrib-output-search
+#git+https://github.com/anki-code/xontrib-prompt-bar
