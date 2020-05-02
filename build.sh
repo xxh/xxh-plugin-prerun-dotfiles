@@ -21,4 +21,8 @@ do
     cp -r $CDIR/$f $build_dir/
 done
 
-PYTHONUSERBASE=$build_dir/home/.local pip install --user -I -r pip-requirements.txt
+if [ -x "$(command -v pip)" ]; then
+  PYTHONUSERBASE=$build_dir/home/.local pip install --user -I -r pip-requirements.txt
+else
+  echo 'Skip pip packages installation: pip not found.'
+fi
