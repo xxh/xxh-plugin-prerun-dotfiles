@@ -22,7 +22,13 @@ do
 done
 
 if [ -x "$(command -v pip)" ]; then
+
   PYTHONUSERBASE=$build_dir/home/.local pip install --user -I -r pip-requirements.txt
+  
+  # Fix python shebang
+  pypath=`readlink -f $(which python)`
+  sed -i '1s|#!'$pypath'|#!/usr/bin/env python|' $build_dir/home/.local/bin/*
+  
 else
   echo 'Skip pip packages installation: pip not found.'
 fi
