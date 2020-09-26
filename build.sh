@@ -27,7 +27,9 @@ if [ -x "$(command -v pip)" ]; then
   
   # Fix python shebang
   pypath=`readlink -f $(which python)`
-  sed -i '1s|#!'$pypath'|#!/usr/bin/env python|' $build_dir/home/.local/bin/*
+  if [ -d "$build_dir/home/.local/bin" ]; then
+    sed -i '1s|#!'$pypath'|#!/usr/bin/env python|' $build_dir/home/.local/bin/*
+  fi
   
 else
   echo 'Skip pip packages installation: pip not found.'
