@@ -1,4 +1,10 @@
+<p align="center">  
 The dotfiles plugin is the start point to create something similar to [dotfiles project](https://dotfiles.github.io/) for xxh.
+</p>
+
+<p align="center">  
+If you like the idea of xxh click ⭐ on the repo and stay tuned.
+</p>
 
 The `home` directory contains the files which will be copied to xxh home directory (default `/home/user/.xxh/`) before running shell. 
 The [XDG](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html) directory `.config` 
