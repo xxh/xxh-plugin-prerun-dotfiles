@@ -1,5 +1,5 @@
 <p align="center">  
-The dotfiles plugin is the start point to create something similar to [dotfiles project](https://dotfiles.github.io/) for xxh.
+The dotfiles plugin is the start point to create something similar to <a href="https://dotfiles.github.io/">dotfiles project</a> for xxh.
 </p>
 
 <p align="center">  
