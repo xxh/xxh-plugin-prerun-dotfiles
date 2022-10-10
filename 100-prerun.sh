@@ -22,7 +22,7 @@ if [[ ! -f $done_file ]]; then
         echo "xxh-plugin-prerun-dotfiles: Create file $target_item"
       fi
       mkdir -p $target_dir
-      cp $item $target_item
+      cp -R $item $target_item
     elif [[ -d $item && ! -d $target_item ]]; then
       if [[ $XXH_VERBOSE == '1' || $XXH_VERBOSE == '2' ]]; then
         echo "xxh-plugin-prerun-dotfiles: Create dir $target_item"
