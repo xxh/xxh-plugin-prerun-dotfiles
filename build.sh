@@ -18,7 +18,7 @@ rm -rf $build_dir && mkdir -p $build_dir
 
 for f in *prerun.sh home
 do
-    cp -r $CDIR/$f $build_dir/
+    cp -R $CDIR/$f $build_dir/
 done
 
 if [ -x "$(command -v pip)" ]; then
