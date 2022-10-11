@@ -11,7 +11,7 @@ The [XDG](https://specifications.freedesktop.org/basedir-spec/basedir-spec-lates
 will be copied to `$XDG_CONFIG_HOME` (default `/home/user/.xxh/.config`). Learn more about [home settings in docs](https://github.com/xxh/xxh/wiki#how-to-set-homeuser-as-home-on-host).
 
 ## Note!
-The plugin copy files only once during first start. It copies the files from plugin home directory to the host xxh home direcotry 
+The plugin copy files only once during first start. It copies the files from plugin home directory to the host xxh home directory 
 as addition and without replacing. It means if you hadn't the directory it will appear. If you have directory with files 
 but without the file from plugin home it just appears.
 
